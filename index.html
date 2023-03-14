@@ -12,6 +12,7 @@
     <style>
         body {
             background-image: url(img/Galaxia.webp);
+            overflow-x: hidden;
         }
 
         .footer {
@@ -33,160 +34,176 @@
         .carousel-inner img {
             margin: auto;
         }
+        
     </style>
 </head>
 
 <body>
-    <header>
-        <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black text-white">
-            <div class="col-1 d-none d-lg-block">
-                <img class="mx-auto d-block" src="img/logo.png" width="100">
-            </div>
-            <div class="col-4 ">
-                <img class="mx-auto d-block" src="img/Rincon.png" width="800">
-            </div>
-            <div class="col-1 d-none d-lg-block">
-                <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
-            </div>
-        </section>
-    </header>
-    <nav class="navbar navbar-expand-lg  bg-gradient " role="navigation">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><span
-                                style="color: white;">Bienvenida</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="comics.html"><span style="color: white;">Comics</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y peliculas</span> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="videojuegos.html"><span style="color: white;">Videojuegos</span> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link disabled"><span style="color: rgb(133, 133, 133);">Tienda Online</span></a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="buscar">
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
+    <div class="container-fluid ">
+        <header>
+            <section class="d-flex  p-4 border-bottom bg-black text-white">
+                <div class="col-1 d-none d-lg-block">
+                    <img class="mx-auto d-block" src="img/logo.png" width="100">
+                </div>
+                <div class="col-10 ">
+                    <img class=" mx-auto d-flex align-self-center" src="img/Rincon.png" width="800">
+                </div>
+                <div class="col-1 d-none d-lg-block">
+                    <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
+                </div>
+            </section>
+
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+            <div class="container-fluid">
+                <img class="mx-auto d-none d-sm-block " src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html"><span
+                                    style="color: white;">Bienvenida</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comics.html"><span style="color: white;">Comics</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y
+                                    peliculas</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videojuegos.html"><span
+                                    style="color: white;">Videojuegos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link disabled dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(133, 133, 133);">
+                                Tienda Online
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="perfil.html"><span
                                     style="color: white;">Perfil</span></a>
                         </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="login.html"><span
                                     style="color: white;">Login</span></a>
                         </li>
                     </ul>
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline" style="color: white;" type="submit">Buscar</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <section id="carrusel">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
-            <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="img/PrimeraTrio.webp" class="d-block w-75">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/SegundaTrio.jpeg" class="d-block w-75">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/TerceraTrio.jpg" class="d-block w-75">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn bg-transparent" type="submit" style="color: white;">Buscar</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container" id="cuerpo">
-            <br>
-            <img class="mx-auto d-block" src="img/Rincon.png" width="600">
-        </div>
-        <br>
-        <div class="texto" style="text-align: center;">
-            <p class="col-5 mx-auto" style="text-align: center; color: white; font-size: large; ">
-                En esta web podrás encontrar un recopilatorio de las distintas formas que hay para explorar el universo
-                de StarWars del canon actual, el universo expandido no lo voy a añadir a no ser que consedere que es algo importante.
-                Aquí repasaremos los titulos más importantes que ofrece la saga, en cuanto a libros, comics y videojuegos. Además, podrás
-                encontrar todas las seríes y películas en orden cronológico, e se irán realizando diferentes puntualizaciones en las distintas secciones de la web
-                si hay que añadir un libro, comic o videojuego a la lista de series y películas para completar el canon y para que puedas disfrutar
-                de la saga desde el principio hasta el final. </p>
-            
-        </div>
-    </section>
-    <footer class="text-center text-lg-start bg-black text-white">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div class="me-5 d-none d-lg-block">
-                <span>Enterate de todas nuestras novedades:</span>
-            </div>
-            <div>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset ">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas me-3 text-secondary"></i>Sobre mi
-                        </h6>
-                        <p>Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
-                            Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
-                            Desarrollo.</p>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
-                        <p><a href="https://www.disneyplus.com/es-es/" class="text-reset">Series y películas</a></p>
-                        <p><a href="https://issuu.com/search?q=star+wars" class="text-reset">Comics</a></p>
-                        <p><a href="https://vandal.elespanol.com/sagas/star-wars" class="text-reset">Videojuegos</a></p>
-                        <p><a href="#!" class="text-reset"
-                            onclick="alert('Si necesita ayuda, por favor, pongase en contacto a traves de ElRincondelaCantina@gmail.com');">Ayuda</a>
-                    </p>
-                    </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-                        <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
-                        <p>
-                            <i class="fas fa-envelope me-3 text-reset"></i>
-                            ElRincondelaCantina@gmail.com
-                        </p>
-                        <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
-                        <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="text-center p-4" style="background-color:black;">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
-        </div>
-    </footer>
+        </nav>
 
+        <section id="carrusel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="img/PrimeraTrio.webp" class="d-block w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/SegundaTrio.jpeg" class="d-block w-75">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/TerceraTrio.jpg" class="d-block w-75">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" id="cuerpo">
+                <br>
+                <img class="mx-auto d-block" src="img/Rincon.png" width="600">
+            </div>
+            <br>
+            <div class="texto" style="text-align: center;">
+                <p class="col-lg-6 col-md-8 col-sm-12 mx-auto" style="text-align: center; color: white; font-size: large; ">
+                    En esta web podrás encontrar un recopilatorio de las distintas formas que hay para explorar el
+                    universo
+                    de StarWars del canon actual, el universo expandido no lo voy a añadir a no ser que consedere que es
+                    algo importante.
+                    Aquí repasaremos los titulos más importantes que ofrece la saga, en cuanto a libros, comics y
+                    videojuegos. Además, podrás
+                    encontrar todas las seríes y películas en orden cronológico, e se irán realizando diferentes
+                    puntualizaciones en las distintas secciones de la web
+                    si hay que añadir un libro, comic o videojuego a la lista de series y películas para completar el
+                    canon
+                    y para que puedas disfrutar
+                    de la saga desde el principio hasta el final. </p>
+
+            </div>
+        </section>
+        <footer class="text-center text-lg-start bg-black text-white">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Enterate de todas nuestras novedades:</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset ">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </section>
+            <section >
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas me-3 text-secondary"></i>Sobre mi
+                            </h6>
+                            <p>Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
+                                Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
+                                Desarrollo.</p>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                            <p><a href="https://www.disneyplus.com/es-es/" class="text-reset">Series y películas</a></p>
+                            <p><a href="https://issuu.com/search?q=star+wars" class="text-reset">Comics</a></p>
+                            <p><a href="https://vandal.elespanol.com/sagas/star-wars" class="text-reset">Videojuegos</a>
+                            </p>
+                            <p><a href="#!" class="text-reset"
+                                    onclick="alert('Si necesita ayuda, por favor, pongase en contacto a traves de ElRincondelaCantina@gmail.com');">Ayuda</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                            <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-reset"></i>
+                                ElRincondelaCantina@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
+                            <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color:black;">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
