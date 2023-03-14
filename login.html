@@ -22,192 +22,204 @@
 </head>
 
 <body>
-    <header>
-        <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black text-white">
-            <div class="col-1 d-none d-lg-block">
-                <img class="mx-auto d-block" src="img/logo.png" width="100">
-            </div>
-            <div class="col-4 ">
-                <img class="mx-auto d-block" src="img/Rincon.png" width="800">
-            </div>
-            <div class="col-1 d-none d-lg-block">
-                <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
-            </div>
-        </section>
-    </header>
+    <div class="container-fluid">
+        <header>
+            <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black text-white">
+                <div class="col-1 d-none d-lg-block">
+                    <img class="mx-auto d-block" src="img/logo.png" width="100">
+                </div>
+                <div class="col-4 ">
+                    <img class="mx-auto d-block" src="img/Rincon.png" width="800">
+                </div>
+                <div class="col-1 d-none d-lg-block">
+                    <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
+                </div>
+            </section>
+        </header>
 
-    <nav class="navbar navbar-expand-lg  bg-gradient " role="navigation">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html"><span
-                                style="color: white;">Bienvenida</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span style="color: white;">Comics</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y peliculas</span> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><span style="color: white;">Videojuegos</span> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link disabled"><span style="color: rgb(133, 133, 133);">Tienda Online</span></a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="buscar">
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
+            <div class="container-fluid">
+                <img class="mx-auto d-none d-sm-block " src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="perfil.html"><span style="color: white;">Perfil</span></a>
+                            <a class="nav-link active" aria-current="page" href="index.html"><span
+                                    style="color: white;">Bienvenida</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comics.html"><span style="color: white;">Comics</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y
+                                    peliculas</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videojuegos.html"><span
+                                    style="color: white;">Videojuegos</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link disabled dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(133, 133, 133);">
+                                Tienda Online
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="perfil.html"><span
+                                    style="color: white;">Perfil</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html"><span
+                                    style="color: white;">Login</span></a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html"><span style="color: white;">Login</span></a>
-                        </li>
-                    </ul>
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline" style="color: white;" type="submit">Buscar</button>
-                </form>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn bg-transparent" type="submit" style="color: white;">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container w-75 bg-black mt-5 shadow  rounded ">
-        <div class="row align-items-stretch">
-            <div class="col  d-none d-lg-block rounded img-fluid ">
-                <img src="img/clonlogin.webp" width="550">
-            </div>
-            <div class="col bg-white p-5 rounded-end">
-                <h2 style="font-family: Helvetica;">Identifícate soldado</h2>
-                <!--LOGIN-->
-                <form action="#">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Constraseña</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <div class=" mb-4" form-check>
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Recordar usuario</label>
-                    </div>
-                    <div class="d-grid">
-                        <a href="index.html" type="submit" class="btn btn-dark">Iniciar sesión</a>
-                    </div>
-                    <div class="my-3">
-                        <span><a href="registro.html">¿No tienes cuenta?</a></span> <br>
-                        <span><a href="recuperarContraseña.html">Recuperar contraseña</a></span><br>
-                        <!--<a href="img/4bbf72b9aae0170381ec672d58bc63cb.mp4">Inicio de sesión incorrecto, x si me da tiempo</a>-->
-                    </div>
-                </form>
-                <div class="container w-100 my-5">
-                    <div class="row text-center">
-                        <div class="col-12">
-                            <span>También puedes identificarte con:</span>
+        <div class="container w-75 bg-black mt-5 shadow  rounded ">
+            <div class="row align-items-stretch">
+                <div class="col  d-none d-lg-block rounded img-fluid ">
+                    <img src="img/clonlogin.webp" width="550">
+                </div>
+                <div class="col bg-white p-5 rounded-end">
+                    <h2 style="font-family: Helvetica;">Identifícate soldado</h2>
+                    <!--LOGIN-->
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
                         </div>
-                        <div class="row ">
-                            <div class="col">
-                                <button class="btn btn-outline-primary w-100 my-5">
-                                    <div class="row align-items-center">
-                                        <div class="col-2 d-none d-lg-block">
-                                            <img src="img/facebook.png" width="24" alt="">
-                                        </div>
-                                        <div class="col-10 text-center">
-                                            <span>Facebook</span>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="col">
-                                <button class="btn btn-outline-danger w-100 my-5">
-                                    <div class="row align-items-center">
-                                        <div class="col-2 d-none d-lg-block">
-                                            <img src="img/google.png" width="24" alt="">
-                                        </div>
-                                        <div class="col-12 col-md-10 text-center">
-                                            <span>Google</span>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Constraseña</label>
+                            <input type="password" class="form-control" id="password">
                         </div>
+                        <div class=" mb-4" form-check>
+                            <input type="checkbox" name="connected" class="form-check-input">
+                            <label for="connected" class="form-check-label">Recordar usuario</label>
+                        </div>
+                        <div class="d-grid">
+                            <a href="index.html" type="submit" class="btn btn-dark">Iniciar sesión</a>
+                        </div>
+                        <div class="my-3">
+                            <span><a href="registro.html">¿No tienes cuenta?</a></span> <br>
+                            <span><a href="recuperarContraseña.html">Recuperar contraseña</a></span><br>
+                            <!--<a href="img/4bbf72b9aae0170381ec672d58bc63cb.mp4">Inicio de sesión incorrecto, x si me da tiempo</a>-->
+                        </div>
+                    </form>
+                    <div class="container w-100 my-5">
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <span>También puedes identificarte con:</span>
+                            </div>
+                            <div class="row ">
+                                <div class="col">
+                                    <button class="btn btn-outline-primary w-100 my-5">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 d-none d-lg-block">
+                                                <img src="img/facebook.png" width="24" alt="">
+                                            </div>
+                                            <div class="col-10 text-center">
+                                                <span>Facebook</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-danger w-100 my-5">
+                                        <div class="row align-items-center">
+                                            <div class="col-2 d-none d-lg-block">
+                                                <img src="img/google.png" width="24" alt="">
+                                            </div>
+                                            <div class="col-12 col-md-10 text-center">
+                                                <span>Google</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <br>
-        <br>
-    </div>
-    <footer class="text-center text-lg-start bg-black text-white">
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div class="me-5 d-none d-lg-block">
-                <span>Enterate de todas nuestras novedades:</span>
-            </div>
-            <div>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 link-secondary text-reset ">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </section>
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
-                        <h6 class="text-uppercase fw-bold mb-2">
-                            <i class="fas me-3 text-secondary"></i>Sobre mi
-                        </h6>
-                        <p>Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
-                            Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
-                            Desarrollo.</p>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
-                        <p><a href="#!" class="text-reset">Series y películas</a></p>
-                        <p><a href="#!" class="text-reset">Comics</a></p>
-                        <p><a href="#!" class="text-reset">Videojuegos</a></p>
-                        <p><a href="#!" class="text-reset">Ayuda</a></p>
-                    </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-                        <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
-                        <p>
-                            <i class="fas fa-envelope me-3 text-reset"></i>
-                            ElRincondelaCantina@gmail.com
-                        </p>
-                        <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
-                        <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
+        <div>
+            <br>
+            <br>
+        </div>
+        <footer class="text-center text-lg-start bg-black text-white">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Enterate de todas nuestras novedades:</span>
+                </div>
+                <div>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary text-reset ">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </section>
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas me-3 text-secondary"></i>Sobre mi
+                            </h6>
+                            <p>Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
+                                Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
+                                Desarrollo.</p>
+                        </div>
+                        <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                            <p><a href="https://www.disneyplus.com/es-es/" class="text-reset">Series y películas</a></p>
+                            <p><a href="https://issuu.com/search?q=star+wars" class="text-reset">Comics</a></p>
+                            <p><a href="https://vandal.elespanol.com/sagas/star-wars" class="text-reset">Videojuegos</a>
+                            </p>
+                            <p><a href="#!" class="text-reset"
+                                    onclick="alert('Si necesita ayuda, por favor, pongase en contacto a traves de ElRincondelaCantina@gmail.com');">Ayuda</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                            <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
+                            <p>
+                                <i class="fas fa-envelope me-3 text-reset"></i>
+                                ElRincondelaCantina@gmail.com
+                            </p>
+                            <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
+                            <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+            <div class="text-center p-4" style="background-color:black;">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
             </div>
-        </section>
-        <div class="text-center p-4" style="background-color:black;">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
 </body>
 
 </html>

@@ -37,6 +37,7 @@
 </head>
 
 <body>
+   <div class="container-fluid">
     <header>
         <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black">
             <div class="col-1 d-none d-lg-block">
@@ -50,13 +51,16 @@
             </div>
         </section>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-expand-md  bg-gradient " role="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-gradient">
         <div class="container-fluid">
+            <img class="mx-auto d-none d-sm-block " src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 col-sm-12 col-md-8 col-lg-auto ">
-                    <li class="nav-item">
-                        <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
-                    </li>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html"><span
                                 style="color: white;">Bienvenida</span></a>
@@ -69,34 +73,34 @@
                                 peliculas</span> </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="videojuegos.html"><span style="color: white;">Videojuegos</span> </a>
+                        <a class="nav-link" href="videojuegos.html"><span
+                                style="color: white;">Videojuegos</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link disabled"><span style="color: rgb(133, 133, 133);">Tienda Online</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link disabled dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(133, 133, 133);">
+                            Tienda Online
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="perfil.html"><span
+                                style="color: white;">Perfil</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html"><span
+                                style="color: white;">Login</span></a>
                     </li>
                 </ul>
-                <form class="d-flex" role="buscar">
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0  ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="perfil.html"><span
-                                    style="color: white;">Perfil</span></a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="login.html"><span
-                                    style="color: white;">Login</span></a>
-                        </li>
-                    </ul>
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline" style="color: white;" type="submit">Buscar</button>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn bg-transparent" type="submit" style="color: white;">Buscar</button>
                 </form>
             </div>
         </div>
-    </nav>
+    </nav>e
     <section class="">
         <div class="container py-5 ">
             <div class="row d-flex justify-content-center align-items-center ">
@@ -210,6 +214,7 @@
             <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
         </div>
     </footer>
+   </div>
 </body>
 
 </html>
