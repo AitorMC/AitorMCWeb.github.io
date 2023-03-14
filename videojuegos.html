@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rincón de la cantina</title>
+    <link rel="shotcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+        body {
+            background-image: url(img/Galaxia.webp);
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-bottom: 0;
+            clear: both;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-box-back {
+
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black">
+            <div class="col-1 d-none d-lg-block">
+                <img class="mx-auto d-block" src="img/logo.png" width="100">
+            </div>
+            <div class="col-4 ">
+                <img class="mx-auto d-block" src="img/Rincon.png" width="800">
+            </div>
+            <div class="col-1 d-none d-lg-block">
+                <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
+            </div>
+        </section>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-expand-md  bg-gradient " role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 col-sm-12 col-md-8 col-lg-auto ">
+                    <li class="nav-item">
+                        <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><span
+                                style="color: white;">Bienvenida</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comics.html"><span style="color: white;">Comics</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y
+                                peliculas</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videojuegos.html"><span style="color: white;">Videojuegos</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled"><span style="color: rgb(133, 133, 133);">Tienda Online</span></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="buscar">
+                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="perfil.html"><span
+                                    style="color: white;">Perfil</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html"><span
+                                    style="color: white;">Login</span></a>
+                        </li>
+                    </ul>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline" style="color: white;" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container" id="cuerpo">
+            <br>
+            <img class="mx-auto d-block" src="img/videojuegos.png" width="600">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <p style="color: white; text-align: center;">
+                Al igual que nos pasa con todo el contenido de star wars, tenemos una gran variedad de videojuegos,
+                desde los más antiguos hasta los más recientes.<br>
+                Aquí veremos unos cuantos de los mejores títulos que nos ofrece la saga, y que nos ayudan a completar la
+                historia, de
+                esta manera podremos alternar entre los videojuegos, comics y el contenido audiovisual.
+        </div>
+        <div class="row" style="margin-left: 120px;">
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/battlefront.webp" alt="battlefront" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Saga battlefront
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Saga battlefront</h2>
+                            <p class="card-text" style="color: white; text-align: center; ">Existen 4-5 juegos de esta
+                                saga, y todos ellos son muy buenos. No sabría con cual nos deberíamos quedar, pero si
+                                tienes
+                                tiempo de sobra y quieres disfrutar de una gran experiencia y acercarte un poco a la
+                                historia se deben
+                                de jugar los modos campaña de todos los juegos, ya que en cada uno se narra una parte
+                                distinta de la historia
+                                de una manera diferente a la vista en las películas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/fallenOrder.webp" alt="fallenOrder" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Jedi Fallen Order</figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Jedi Fallen Order</h2>
+                            <p style="color: white; text-align: center;">El Imperio quiere erradicar a todos los Jedi
+                                tras la ejecución de la Orden 66. Tú, un padawan ahora convertido en fugitivo, deberás
+                                luchar por sobrevivir mientras exploras los misterios de una civilización que se
+                                extinguió hace años, con la esperanza de reconstruir la Orden Jedi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/jedisurvivor.webp" alt="jedisurvivor" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Jedi Survivor
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Jedi Survivor</h2>
+                            <p style="color: white; text-align: center;">La secuela de Jedi Fallen Order nos pondrá a
+                                los mandos de un Jedi ya curtido en una galaxia atemorizada por el Imperio donde
+                                exploraremos nuevos planetas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/republic comando.webp" alt="republic" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Republic Commando
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Republic Commando</h2>
+                            <p>La historia del 'Escuadrón Delta', un grupo de elite de comandos clon, a través de tres
+                                misiones durante las Guerras Clon. El juego fue diseñado en parte para cerrar la brecha
+                                entre Star Wars: Episodio II El Ataque de los Clones y Star Wars: Episodio III La
+                                Venganza de los Sith. Los desarrolladores dijeron que mientras las novelas y las
+                                películas se ven desde el punto de vista de los Jedi, en Republic Commando es contada
+                                desde el punto de vista de las tropas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-left: 120px;">
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/starkiller1.webp" alt="starkiller1" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">El poder de la fuerza I
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">El poder de la fuerza I</h2>
+                            <p class="card-text" style="color: white; text-align: center; ">En este juego seguiremos la
+                                historia de Galen Marek
+                                un joven que tiene la desgracia de convertirse en el aprendiz secreto de Darth Vader. A
+                                lo largo del juego iremos explorando
+                                el universo y descubriendo la verdad sobre nuestro pasado y el de la galaxia. También
+                                iremos encontrandonos con viejos conocidos de las Guerras
+                                clon y muchos otros personajes nuevos</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/starkiller2.webp" alt="fallenOrder" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">El poder de la fuerza II
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">El poder de la fuerza II</h2>
+                            <p style="color: white; text-align: center;">La secuela de El poder de la fuerza I, donde
+                                seguiremos en la piel de Galen Marek o no, quien sabe.
+                                Continuaremos nuestro viaje a lo largo de la galaxia, descubriendo distintos secretos y
+                                nuevas historias del universo de star wars. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/lego.jpg" alt="lego" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Lego star wars
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Lego star wars</h2>
+                            <p style="color: white; text-align: center;">Podría parecer una tontería, pero los juegos de
+                                Lego Star Wars son una
+                                maravillosa forma de explorar el universo de la saga, tanto para los mas niños como para
+                                los no tan niños. Hay una gran variedad de
+                                juegos de lego star wars y aunque bien cuentan la misma historia, la cuenta a su propia
+                                forma, haciendolo una experiencia que no te deberias de perder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/squadrons.webp" alt="squadrons" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Star wars Squadrons
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Star wars Squadrons</h2>
+                            <p>
+                                Este juego ambienta su historia tras El Retorno del Jedi, durante los últimos días del Imperio
+                                Galáctico y el nacimiento de la Nueva República. Este juego de acción en primera persona
+                                nos propone vivir ese momento histórico en la piel de dos pilotos personalizables, uno
+                                por cada bando, y así poder ver como se desarrolla todo desde cada perspectiva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="text-center text-lg-start bg-black text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Enterate de todas nuestras novedades:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset ">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas me-3 text-secondary"></i>Sobre mi
+                        </h6>
+                        <p>
+                            Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
+                            Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
+                            Desarrollo.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-md-8 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                        <p><a href="https://www.disneyplus.com/es-es/" class="text-reset">Series y películas</a></p>
+                        <p><a href="https://issuu.com/search?q=star+wars" class="text-reset">Comics</a></p>
+                        <p><a href="https://vandal.elespanol.com/sagas/star-wars" class="text-reset">Videojuegos</a></p>
+                        <p><a href="#!" class="text-reset"
+                                onclick="alert('Si necesita ayuda, por favor, pongase en contacto a traves de ElRincondelaCantina@gmail.com');">Ayuda</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-reset"></i>
+                            ElRincondelaCantina@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
+                        <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color:black;">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>

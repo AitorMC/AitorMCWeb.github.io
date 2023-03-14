@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rincón de la cantina</title>
+    <link rel="shotcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <style>
+        body {
+            background-image: url(img/Galaxia.webp);
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-bottom: 0;
+            clear: both;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            perspective: 1000px;
+            /* Remove this if you don't want the 3D effect */
+        }
+
+        /* This container is needed to position the front and back side */
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        /* Do an horizontal flip when you move the mouse over the flip box container */
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        /* Position the front and back side */
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+        }
+
+        /* Style the front side (fallback if image is missing) */
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        /* Style the back side */
+        .flip-box-back {
+
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="d-flex  justify-content-lg-between p-4 border-bottom bg-black">
+            <div class="col-1 d-none d-lg-block">
+                <img class="mx-auto d-block" src="img/logo.png" width="100">
+            </div>
+            <div class="col-4 ">
+                <img class="mx-auto d-block" src="img/Rincon.png" width="800">
+            </div>
+            <div class="col-1 d-none d-lg-block">
+                <img class="mx-auto d-block" src="img/LogoCantina.png" width="100">
+            </div>
+        </section>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-expand-md  bg-gradient " role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 col-sm-12 col-md-8 col-lg-auto ">
+                    <li class="nav-item">
+                        <img class="mx-auto d-block" src="img/pegatina-star-wars-r2d2-sw5.png" width="35">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><span
+                                style="color: white;">Bienvenida</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comics.html"><span style="color: white;">Comics</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="seriesypeliculas.html"><span style="color: white;">Series y
+                                peliculas</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="videojuegos.html"><span style="color: white;">Videojuegos</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="youtube.html"><span style="color: white;">Youtube</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled"><span style="color: rgb(133, 133, 133);">Tienda Online</span></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="buscar">
+                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0  ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="perfil.html"><span
+                                    style="color: white;">Perfil</span></a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-center me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html"><span
+                                    style="color: white;">Login</span></a>
+                        </li>
+                    </ul>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline" style="color: white;" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+
+        <div class="container" id="cuerpo">
+            <br>
+            <img class="mx-auto d-block" src="img/comics.png" width="600" style="margin-bottom: 20px;">
+        </div>
+        <div style="margin-bottom: 20px;">
+            <p style="color: white; text-align: center;">
+                Hay una gran cantidad de comics de Star Wars, pero aquí se muestran los más interesantes y que nos ayudaran 
+                a completar información sobre las diferentes personajes de la saga.
+            </p>
+        </div>
+        <!--
+        <div class="row" style="margin-left: 120px;">
+            <div class="col-lg-6">
+                <div class="card" style="width: 20rem; background: transparent; border-color: white; margin-top: 5px;">
+                    <img class="card-img-top" src="img/enoCordova.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color:yellow; text-align: center;">Jedi Fallen Order:Templo oscuro
+                        </h5>
+                        <p style="color: white; text-align: center;">Este cómic se situa antes del despues de la tercera
+                            película y antes del primer juego "Jedi Fallen Order"</p>
+                        <p class="card-text" style="color: white; text-align: center;">El Maestro Jedi Eno Cordova y su
+                            Padawan Cere Junda viajan a
+                            Ontotho para supervisar la excavación de un templo antiguo, pero la resistencia local y las
+                            fuerzas
+                            de seguridad de una corporación sin escrúpulos dificultan la paz en el planeta.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        -->
+        <div class="row" style="margin-left: 120px;">
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/enoCordova.png" alt="PreFallenOrder" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Jedi Fallen Order:Templo oscuro
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Jedi Fallen Order:Templo oscuro</h2>
+                            <p style="color: white; text-align: center;">Este cómic se situa antes del despues de la
+                                tercera
+                                película y antes del primer juego "Jedi Fallen Order"</p>
+                            <p class="card-text" style="color: white; text-align: center;">El Jedi Eno Cordova y
+                                su
+                                Padawan Cere Junda viajan a
+                                Ontotho para supervisar la excavación de un templo antiguo, pero la resistencia local y
+                                las
+                                fuerzas
+                                de seguridad de una corporación sin escrúpulos dificultan la paz en el planeta.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/thrawn.png" alt="thrawn" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">THRAWN</figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">THRAWN</h2>
+                            <p style="color: white; text-align: center;">Este comic se situa durante la triología
+                                original</p>
+                            <p>Adaptación al cómic de la primera novela del nuevo canon protagonizada por el Gran
+                                Almirante Thrawn, donde se nos mostrará cómo llegó a convertirse en el temible a la par
+                                que respetado villano que todos conocemos. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/dv1.png" alt="DarthVader1" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Darth Vader: Señor oscuro de los
+                                Sith
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Darth Vader: Señor oscuro de los Sith</h2>
+                            <p style="color: white; text-align: center;">Este comic se situa tras el final de la tercera
+                                pelicula</p>
+                            <p>Anakin Skywalker ya no existe. En su lugar, Darth Vader ocupa el puesto de aprendiz del
+                                autoproclamado Emperador Palpatine, debiendo obtener un nuevo sable láser, ocupándose
+                                del Inquisitorius y acabando con los pocos Jedi supervivientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/dv2.png" alt="CloneWars" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Darth Vader (2015)
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Darth Vader (2015)</h2>
+                            <p>Serie regular de la saga que nos relata cómo Vader descubre la identidad del piloto que
+                                destruyó la Estrella de la Muerte. Entre Una Nueva Esperanza y El Imperio Contraataca.
+                                Interconectada con la serie regular de Star Wars y la Doctora Aphra.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-left: 120px;">
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/dv3.png" alt="Vader" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Vader Derribado
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Vader Derribado</h2>
+                            <p class="card-text" style="color: white; text-align: center;">Darth Vader persigue a los
+                                rebeldes, pero es derribado tras colisionar con el Ala-X de Luke sobre Vrogas Vas. Allí
+                                los Rebeldes intentarán escapar del Lord Sith enfrentándose a Aphra y sus droides
+                                asesinos y al propio Señor Oscuro.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/dv4.png" alt="Vader" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Darth Vader: Corazón oscuro de los
+                                Sith (2020)</figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Darth Vader: Corazón oscuro de los Sith (2020)</h2>
+                            <p>El Señor Oscuro de los Sith se embarca en una misión de venganza personal contra todo
+                                aquel que ha ocultado la existencia de su hijo, Luke Skywalker. Mientras descubre cómo
+                                el niño sobrevivió hará frente a sus temores personales reviviendo su pasado. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/kylo.png" alt="kylo" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">El ascenso de Kylo Ren
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">El ascenso de Kylo Ren</h2>
+
+                            <p>Ben Solo ha provocado indirectamente la destrucción del Templo Jedi de su tío, Luke
+                                Skywalker. Tras su huida se unirá a los Caballeros de Ren, luchará contra sus antiguos
+                                aliados Jedi y se convertirá en un malvado villano conocido como Kylo Ren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-2 mx-5">
+                <div class="flip-box mb-5">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/poe.png" alt="CloneWars" style="width:300px;height:400px">
+                            <figcaption class="figure-caption" style="color: white;">Poe Dameron
+                            </figcaption>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2 style="color: yellow;">Poe Dameron</h2>
+                            <p>El joven piloto de la Nueva República pasa a convertirse en el As de la Resistencia
+                                mientras trabaja con la General Organa y el Escuadrón Negro para ayudar a la galaxia
+                                contra la creciente amenaza de la Primera Orden. Serie que da gran trasfondo a esta era.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <footer class="text-center text-lg-start bg-black text-white">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Enterate de todas nuestras novedades:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary text-reset ">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas me-3 text-secondary"></i>Sobre mi
+                        </h6>
+                        <p>
+                            Soy un alumno de 4º curso del grado de ingeniería informática en la universidad Pablo de
+                            Olavide.Este proyecto es una página web de la asignatura de Tecnologias Avanzadas de
+                            Desarrollo.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-md-8 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Enlaces útiles</h6>
+                        <p><a href="https://www.disneyplus.com/es-es/" class="text-reset">Series y películas</a></p>
+                        <p><a href="https://issuu.com/search?q=star+wars" class="text-reset">Comics</a></p>
+                        <p><a href="https://vandal.elespanol.com/sagas/star-wars" class="text-reset">Videojuegos</a></p>
+                        <p><a href="#!" class="text-reset"
+                                onclick="alert('Si necesita ayuda, por favor, pongase en contacto a traves de ElRincondelaCantina@gmail.com');">Ayuda</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fas fa-home me-3 text-reset"></i> Sevilla, Sev 41005, SP</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-reset"></i>
+                            ElRincondelaCantina@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-reset"></i> + 34 123 456 789</p>
+                        <p><i class="fas fa-print me-3 text-reset"></i> + 34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color:black;">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://www.starwars.com/">StarWars.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
